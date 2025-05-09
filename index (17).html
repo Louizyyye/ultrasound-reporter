@@ -1,0 +1,297 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Ultrasound Report Generator
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100 font-roboto">
+  <div class="container mx-auto p-4">
+   <header class="flex justify-between items-center py-4">
+    <h1 class="text-2xl font-bold">
+     Ultrasound Report Generator
+    </h1>
+    <nav>
+     <ul class="flex space-x-4">
+      <li>
+       <a class="text-blue-500 hover:underline" href="login.html">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="text-blue-500 hover:underline" href="#">
+        Reports
+       </a>
+      </li>
+      <li>
+       <a class="text-blue-500 hover:underline" href="#">
+        Settings
+       </a>
+      </li>
+      <li>
+       <a class="text-blue-500 hover:underline" href="#">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </header>
+   <main class="bg-white p-6 rounded-lg shadow-lg">
+    <h2 class="text-xl font-semibold mb-4">
+     Generate New Report
+    </h2>
+    <form class="space-y-4" id="reportForm">
+     <div>
+      <label class="block text-sm font-medium text-gray-700" for="patientName">
+       Patient Name
+      </label>
+      <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="patientName" placeholder="Enter patient name" type="text"/>
+     </div>
+     <div>
+      <label class="block text-sm font-medium text-gray-700" for="patientId">
+       Patient ID
+      </label>
+      <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="patientId" placeholder="Enter patient ID" type="text"/>
+     </div>
+     <div>
+      <label class="block text-sm font-medium text-gray-700" for="examinationType">
+       Type of Examination
+      </label>
+      <select class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="examinationType">
+       <option value="Abdominal Ultrasound">
+        Abdominal Ultrasound
+       </option>
+       <option value="Pelvic Ultrasound">
+        Pelvic Ultrasound
+       </option>
+       <option value="Obstetric Ultrasound">
+        Obstetric Ultrasound
+       </option>
+       <option value="Transvaginal Ultrasound">
+        Transvaginal Ultrasound
+       </option>
+       <option value="Transrectal Ultrasound">
+        Transrectal Ultrasound
+       </option>
+       <option value="Breast Ultrasound">
+        Breast Ultrasound
+       </option>
+       <option value="Thyroid Ultrasound">
+        Thyroid Ultrasound
+       </option>
+       <option value="Carotid Ultrasound">
+        Carotid Ultrasound
+       </option>
+       <option value="Echocardiogram">
+        Echocardiogram
+       </option>
+       <option value="Musculoskeletal Ultrasound">
+        Musculoskeletal Ultrasound
+       </option>
+       <option value="Vascular Ultrasound">
+        Vascular Ultrasound
+       </option>
+       <option value="Renal Ultrasound">
+        Renal Ultrasound
+       </option>
+       <option value="Scrotal Ultrasound">
+        Scrotal Ultrasound
+       </option>
+       <option value="Liver Ultrasound">
+        Liver Ultrasound
+       </option>
+       <option value="Pancreatic Ultrasound">
+        Pancreatic Ultrasound
+       </option>
+       <option value="Prostate Ultrasound">
+        Prostate Ultrasound
+       </option>
+       <option value="Testicular Ultrasound">
+        Testicular Ultrasound
+       </option>
+       <option value="Bladder Ultrasound">
+        Bladder Ultrasound
+       </option>
+       <option value="Aortic Ultrasound">
+        Aortic Ultrasound
+       </option>
+       <option value="Gallbladder Ultrasound">
+        Gallbladder Ultrasound
+       </option>
+       <option value="Kidney Ultrasound">
+        Kidney Ultrasound
+       </option>
+       <option value="Spleen Ultrasound">
+        Spleen Ultrasound
+       </option>
+       <option value="Appendix Ultrasound">
+        Appendix Ultrasound
+       </option>
+       <option value="Lung Ultrasound">
+        Lung Ultrasound
+       </option>
+       <option value="Neonatal Cranial Ultrasound">
+        Neonatal Cranial Ultrasound
+       </option>
+       <option value="Neonatal Hip Ultrasound">
+        Neonatal Hip Ultrasound
+       </option>
+       <option value="Neonatal Spine Ultrasound">
+        Neonatal Spine Ultrasound
+       </option>
+       <option value="Pediatric Abdominal Ultrasound">
+        Pediatric Abdominal Ultrasound
+       </option>
+       <option value="Pediatric Pelvic Ultrasound">
+        Pediatric Pelvic Ultrasound
+       </option>
+       <option value="Pediatric Renal Ultrasound">
+        Pediatric Renal Ultrasound
+       </option>
+       <option value="Pediatric Hip Ultrasound">
+        Pediatric Hip Ultrasound
+       </option>
+       <option value="Pediatric Spine Ultrasound">
+        Pediatric Spine Ultrasound
+       </option>
+       <option value="Pediatric Cranial Ultrasound">
+        Pediatric Cranial Ultrasound
+       </option>
+       <option value="Pediatric Testicular Ultrasound">
+        Pediatric Testicular Ultrasound
+       </option>
+       <option value="Pediatric Thyroid Ultrasound">
+        Pediatric Thyroid Ultrasound
+       </option>
+       <option value="Pediatric Vascular Ultrasound">
+        Pediatric Vascular Ultrasound
+       </option>
+       <option value="Pediatric Musculoskeletal Ultrasound">
+        Pediatric Musculoskeletal Ultrasound
+       </option>
+      </select>
+     </div>
+     <div>
+      <label class="block text-sm font-medium text-gray-700" for="reportDate">
+       Report Date
+      </label>
+      <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="reportDate" type="date"/>
+     </div>
+     <div>
+      <label class="block text-sm font-medium text-gray-700" for="indicationOfStudy">
+       Indication of Study
+      </label>
+      <textarea class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="indicationOfStudy" placeholder="Enter indication of study" rows="4"></textarea>
+     </div>
+     <div>
+      <label class="block text-sm font-medium text-gray-700" for="reportDetails">
+       Report Details
+      </label>
+      <textarea class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="reportDetails" placeholder="Enter report details" rows="4"></textarea>
+     </div>
+     <div>
+      <label class="block text-sm font-medium text-gray-700" for="conclusions">
+       Conclusions
+      </label>
+      <textarea class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="conclusions" placeholder="Enter conclusions" rows="4"></textarea>
+     </div>
+     <div>
+      <label class="block text-sm font-medium text-gray-700" for="recommendations">
+       Recommendations
+      </label>
+      <textarea class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="recommendations" placeholder="Enter recommendations" rows="4"></textarea>
+     </div>
+     <button class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600" id="generateReport" type="button">
+      Generate Report
+     </button>
+    </form>
+    <div class="mt-8" id="reportOutput">
+    </div>
+   </main>
+  </div>
+  <script>
+   class PatientInfo {
+     constructor(name, id) {
+       this.name = name;
+       this.id = id;
+     }
+   }
+
+   class ExaminationInfo {
+     constructor(type, date) {
+       this.type = type;
+       this.date = date;
+     }
+   }
+
+   class ReportContent {
+     constructor(indication, details, conclusions, recommendations) {
+       this.indication = indication;
+       this.details = details;
+       this.conclusions = conclusions;
+       this.recommendations = recommendations;
+     }
+   }
+
+   class UltrasoundReport {
+     constructor(patientInfo, examinationInfo, reportContent) {
+       this.patientInfo = patientInfo;
+       this.examinationInfo = examinationInfo;
+       this.reportContent = reportContent;
+     }
+
+     generate_report() {
+       return `
+         <div class="p-6 bg-white rounded-lg shadow-lg">
+           <h1 class="text-2xl font-bold mb-4">Ultrasound Report</h1>
+           <div class="mb-4">
+             <h2 class="text-xl font-semibold">Patient Information</h2>
+             <p><strong>Name:</strong> ${this.patientInfo.name}</p>
+             <p><strong>ID:</strong> ${this.patientInfo.id}</p>
+           </div>
+           <div class="mb-4">
+             <h2 class="text-xl font-semibold">Examination Information</h2>
+             <p><strong>Type:</strong> ${this.examinationInfo.type}</p>
+             <p><strong>Date:</strong> ${this.examinationInfo.date}</p>
+           </div>
+           <div class="mb-4">
+             <h2 class="text-xl font-semibold">Report Content</h2>
+             <p><strong>Indication of Study:</strong> ${this.reportContent.indication}</p>
+             <p><strong>Details:</strong> ${this.reportContent.details}</p>
+             <p><strong>Conclusions:</strong> ${this.reportContent.conclusions}</p>
+             <p><strong>Recommendations:</strong> ${this.reportContent.recommendations}</p>
+           </div>
+         </div>
+       `;
+     }
+   }
+
+   document.getElementById("generateReport").addEventListener("click", function() {
+     const patientInfo = new PatientInfo(
+       document.getElementById("patientName").value,
+       document.getElementById("patientId").value
+     );
+     const examinationInfo = new ExaminationInfo(
+       document.getElementById("examinationType").value,
+       document.getElementById("reportDate").value
+     );
+     const reportContent = new ReportContent(
+       document.getElementById("indicationOfStudy").value,
+       document.getElementById("reportDetails").value,
+       document.getElementById("conclusions").value,
+       document.getElementById("recommendations").value
+     );
+
+     const report = new UltrasoundReport(patientInfo, examinationInfo, reportContent);
+     const report_html = report.generate_report();
+
+     document.getElementById("reportOutput").innerHTML = report_html;
+   });
+  </script>
+ </body>
+</html>
